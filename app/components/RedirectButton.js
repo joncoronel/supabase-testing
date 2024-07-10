@@ -1,6 +1,6 @@
 "use client";
 
-import { redirectPrivate } from "./actions";
+import { redirectPrivate } from "../actions";
 
 export default function RedirectButton() {
   return (
