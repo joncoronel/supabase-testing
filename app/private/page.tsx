@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 
-export default async function PrivatePage() {
+export default function PrivatePage() {
   const allCookies = cookies().getAll();
 
   return (
