@@ -1,6 +1,6 @@
 "use client";
 
-import { redirectPrivate } from "../actions";
+import { redirectPrivate, redirectPrivateSuspense } from "../actions";
 import { useRouter } from "next/navigation";
 
 export default function RedirectButton() {
@@ -20,6 +20,14 @@ export default function RedirectButton() {
         }}
       >
         Redirect to private through client router
+      </button>
+      <button
+        onClick={() => {
+          redirectPrivateSuspense();
+        }}
+      >
+        Redirect to private page with suspense around cookies through server
+        action
       </button>
     </>
   );
